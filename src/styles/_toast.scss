@@ -1,0 +1,12 @@
+// React toast
+.toast {
+  z-index: 999999999 !important;
+  margin-right: 10px;
+}
+
+.toast-wrapper {
+  border-radius: 6px;
+  padding-left: 13px;
+  font-family: "Roboto";
+  font-size: medium;
+}
