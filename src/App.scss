@@ -1,0 +1,11 @@
+@import "./styles/_rules";
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.active {
+  background: $glacier;
+}
