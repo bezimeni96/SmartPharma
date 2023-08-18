@@ -1,0 +1,52 @@
+@import "../../styles/_variables";
+
+.btn {
+  color: $btn-color;
+  background-color: $btn-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+
+  transition: 500ms;
+
+  &:focus,
+  &:active,
+  &:disabled {
+    outline: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    filter: brightness(50%);
+  }
+
+  .iconLeft {
+    margin-right: 0.125rem;
+    display: flex;
+    align-items: center;
+    height: 1rem;
+    width: auto;
+  }
+}
+
+.btnPrimary {
+  @extend .btn;
+
+  color: $btn-submit-color;
+  background-color: $btn-submit-bg;
+
+  &:hover {
+    background-color: $btn-submit-hover-bg;
+  }
+}
+
+.btnSubmit {
+  @extend .btnPrimary;
+
+  margin-top: 1rem;
+}
