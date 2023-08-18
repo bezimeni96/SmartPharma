@@ -1,0 +1,84 @@
+@import "../../styles/_variables";
+
+.wrapper {
+  align-items: center;
+
+  .table {
+    margin: 2rem 0;
+    width: 100%;
+    border-spacing: 1px;
+
+    .header {
+      background-color: $white;
+      height: 2rem;
+
+      > th {
+        padding: 0 1rem;
+      }
+    }
+
+    .row {
+      width: 100%;
+      min-height: 3rem;
+      background-color: $white;
+
+      & > td {
+        height: 3rem;
+
+        width: 10rem !important;
+
+        border: none;
+        outline: none;
+      }
+
+      .name,
+      .manufacturer,
+      .price,
+      .expiryDate {
+        text-align: center;
+        min-width: 10rem;
+      }
+
+      .edit,
+      .remove {
+        width: 4rem !important;
+        text-align: center;
+
+        cursor: pointer;
+      }
+
+      .edit {
+        color: $casal;
+      }
+
+      .remove {
+        color: $red;
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+    & > span {
+      margin: 0 1rem;
+    }
+
+    & > button {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      font-size: 1.5rem;
+      color: $casal;
+
+      cursor: pointer;
+
+      &:disabled {
+        opacity: 0.5;
+      }
+    }
+  }
+}
