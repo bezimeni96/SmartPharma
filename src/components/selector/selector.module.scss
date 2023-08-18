@@ -1,0 +1,38 @@
+@import "../../styles/_variables";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: left;
+  font-size: 1rem;
+
+  .label {
+    margin-left: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .input {
+    width: 100%;
+    font-size: 1rem;
+
+    border: $inputBorder;
+    border-radius: 1rem;
+    outline: none;
+
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .error {
+    border-color: $errorMessage;
+  }
+
+  .errorMessage {
+    min-height: 0.875rem;
+    color: $errorMessage;
+    font-size: 0.875rem;
+    margin-left: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+}
